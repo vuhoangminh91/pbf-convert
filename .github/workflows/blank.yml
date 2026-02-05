@@ -26,3 +26,9 @@ jobs:
         with:
           source: "fonts/"
           target: "build/"
+
+      - name: Upload PBF glyphs
+        uses: actions/upload-artifact@v4
+        with:
+          name: pbf-fonts
+          path: build/
